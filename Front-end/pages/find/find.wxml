@@ -1,0 +1,130 @@
+<view class="top"> Editing
+</view>
+
+
+<view class="container">
+  <view class="text"> Basic information
+  </view>
+  <view class="block1">
+    <view class="col1">
+      <view class="m1">
+        Title
+      </view>
+
+
+      <view class="t1">
+        <input class="text" bindinput="handleInput"  value="{{title}}"data-type="title" id="title" style='font-size:25rpx' />
+        <view class="line"></view>
+      </view>
+    </view>
+
+
+
+    <view class="col1">
+      <view class="m1">
+        Gender
+      </view>
+      <view class="t1">
+        <!-- <input class="text" bindinput="handleInput" data-type="title" id="title" style='font-size:25rpx' /> -->
+        <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+        <view class="picker"  >
+          {{array1[index1]}}
+        </view>
+      </picker>
+        <view class="line1"></view>
+      </view>
+    </view>
+
+
+    <view class="col1">
+      <view class="m1">
+        Department
+      </view>
+      <view class="t1">
+        <input class="text" bindinput="handleInput"  value="{{department}}"   data-type="department" id="department" style='font-size:25rpx' />
+        <view class="line"></view>
+      </view>
+    </view>
+
+    <view class="col1">
+      <view class="m1">
+        Grade
+      </view>
+      <view class="t1">
+        <input class="text" bindinput="handleInput"  value="{{grade}}"data-type="grade" id="grade" style='font-size:25rpx' />
+        <view class="line"></view>
+      </view>
+    </view>
+
+    <view class="col1">
+      <view class="m1">
+        Routine
+      </view>
+      <view class="t1">
+        <!-- <input class="text" bindinput="handleInput" data-type="title" id="title" style='font-size:25rpx' /> -->
+        <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+        <view class="picker"  >
+          {{array2[index2]}}
+        </view>
+      </picker>
+        <view class="line1"></view>
+      </view>
+    </view>
+
+    <view class="col1">
+      <view class="m1">
+        Location
+      </view>
+      <view class="t1">
+        <!-- <input class="text" bindinput="handleInput" data-type="title" id="title" style='font-size:25rpx' /> -->
+        <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+        <view class="picker"  >
+          {{array3[index3]}}
+        </view>
+      </picker>
+        <view class="line1"></view>
+      </view>
+    </view>
+
+
+  </view>
+  <view class="text">
+    Number of roomates
+  </view>
+  <view class="block2">
+
+    <view class="col2">
+      <view class="m1">
+        Number
+      </view>
+      <view class="t1">
+        <!-- <input class="text" bindinput="handleInput" data-type="title" id="title" style='font-size:25rpx' /> -->
+        <picker bindchange="bindPickerChange4" value="{{index4}}" range="{{array4}}">
+        <view class="picker"  >
+          {{array4[index4]}}
+        </view>
+      </picker>
+        <view class="line1"></view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="text">
+    Introduction
+  </view>
+  <view class="block3">
+    <view class="page-section">
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" alue="{{value}}" bindinput="handleInput" user_number data-type="body" id="body"
+          placeholder=" You can write something here" auto-height />
+        </view>
+  </view>
+    
+  </view>
+
+  <button class="btn1" style="width: 400rpx" bindtap="submit">
+    Submit
+  </button>
+
+</view>

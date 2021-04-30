@@ -1,0 +1,174 @@
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+ 
+.tabTit{
+  height:90rpx;
+  line-height: 90rpx;
+  border-bottom: solid 1px #eee;
+  position:fixed;
+  top:0;
+  width: 750rpx;
+  z-index: 1;
+  color: black;
+  background: #fff;
+  font-size:15px;
+  text-align: center;
+}
+.tabTit .active{
+  border-radius: 30px;
+  color:white;
+  background: #ff00cc;
+}
+
+
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+ 
+.tabTit{
+  height:90rpx;
+  line-height: 90rpx;
+  border-bottom: solid 1px #eee;
+  position:fixed;
+  top:0;
+  width: 750rpx;
+  z-index: 1;
+  color: black;
+  background: #fff;
+  font-size:15px;
+  text-align: center;
+}
+.tabTit .active{
+  border-radius: 30px;
+  color:white;
+  background: #ff00cc;
+}
+
+
+.tabLayer{
+  box-shadow: 0 5px 5px #eee;
+  width:750rpx;
+  overflow: hidden;
+  position: fixed;
+  top:90rpx;
+  z-index: 1;
+  background: #fff;
+  padding-bottom: 40rpx;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+.tabLayer text{
+  color:#fff;
+  width:210rpx;
+  height:60rpx;
+  border-radius: 30rpx;
+  line-height:60rpx;
+  float:left;
+  border: solid 1px #eee;
+  background: #ff00cc;
+  margin:20rpx 0 0 26rpx;
+  font-size:15px;
+}
+.tabLayer .active{
+  color: white;
+  background: #ff00cc;
+}
+
+.flex1 {
+  flex: 1;
+  overflow: hidden;
+  display: block;
+}
+  
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigator{
+  display:inline;
+}
+
+.container{
+  padding: 0;
+  margin-top: 91rpx;
+}
+.post{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap:wrap;
+  width: 95%;
+  margin-left:10px;
+  margin-right:10px;
+  border-top: 2rpx #dedede solid;
+  margin-top: 25rpx;
+  padding-top:10rpx; 
+  border-radius: 20px;
+  background: #f4f2f7;
+}
+.post_img{
+  width: 30%;
+  padding: 25rpx;
+}
+.post_img image{
+  float: left;
+  width: 75%;
+  height: 165rpx;
+  align-self: center;
+}
+
+.post_info{
+  width: 63%;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+.post_info .title{
+  font-weight: 600;
+  line-height: 40rpx;
+  font-size: 37rpx;
+  color: #404040;
+}
+.content{
+  margin-top: 15rpx;
+  color: #A8A8A8
+}
+.member{
+  margin-top:15rpx;
+}
+.member .member1{
+  position: absolute;
+  color: #ff00cc;
+  font-size: 35rpx;
+  font-weight: 600;
+  right: 60rpx;
+}
+
+.btn{
+  background-color: #eee;
+  border: black;
+  margin-left:80%;
+  width:48px; 
+  height: 48px;
+  position:fixed; 
+  bottom:20px; 
+  border-radius: 50%
+  }
+
+.btn-gotop{ 
+  color:black; 
+  font-weight: 600;
+  position:absolute;
+  margin-top: 0.8rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem
+  } 
+
+.container{
+  display: block;
+}

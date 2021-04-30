@@ -1,0 +1,69 @@
+<view class="top">
+  <image class="top-image" src="/image/top.png">
+  </image>
+</view>
+
+
+<view class="container">
+  <view class="login">
+    Login
+  </view>
+
+  <view class="email">
+    Email Address
+  </view>
+
+  <view class="inputView1">
+    <input class="inputText1"  id ="email" data-type="email" bindinput="handleInput"placeholder="Please input email"style='font-size:34rpx' />
+  </view>
+  <view class="line"></view>
+
+
+
+  
+    <view class="password-tip">
+      Password
+    </view>
+
+    
+
+<view class="pass">
+  <view class="inputView2">
+    <input password='{{passwordType}}'  id ="password" data-type="password"  bindinput="handleInput" maxlength="20" placeholder="Please input password" style='font-size:34rpx'></input>
+  </view>
+
+  <image src='{{defaultType?"/image/yanjing-kai.png": "/image/yanjing-guan.png"}}' class='imageStyle'
+      bindtap='eyeStatus'></image>
+
+</view>
+
+
+  <view class="line"></view>
+
+
+</view>
+<view class="btn">
+  <button class="btn1" style="width: 600rpx"  bindtap="denglu">
+    Login
+  </button>
+</view>
+
+<view class="forget">
+  <navigator class="forget_pasword" url="/pages/reset/reset">
+    Foeget your pasword?
+  </navigator>
+</view>
+
+<view class="account">
+  Dont' have a account?
+</view>
+<view class="create">
+  <navigator class="create_account" url="/pages/account/account">
+    Create Account
+  </navigator>
+</view>
+
+<view class="bottom">
+  <image class="buttom-image" src="/image/bottom.png">
+  </image>
+</view>

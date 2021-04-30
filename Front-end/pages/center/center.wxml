@@ -1,0 +1,35 @@
+<!--pages/center/center.wxml-->
+<view> 
+        <view class="top">
+            <view class="userAvatar">
+                <image class="picture" src='/image/publisher.png'></image>
+            </view>
+
+            <view class="userName">
+                <lable>{{userName}}</lable>
+            </view>
+        </view>
+
+        <view class="contain">
+            <view class="row"  bindtap="showInfo">
+                <label class="name">User Information</label>
+                <label class="right">></label>
+            </view>
+
+            <view class="row" bindtap="showNoti">
+                <label class="name">Notification</label>
+                <label class="right">></label>
+            </view>
+
+            <view class="row" bindtap="showPost">
+                <label class="name">Manage My Post</label>
+                <label class="right">></label>
+            </view>
+        </view>
+
+        <view class="button" bindtap="logoutModal">
+          <button class="logout" >Logout</button>
+        </view>
+
+    </view>
+

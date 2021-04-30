@@ -1,0 +1,117 @@
+.container {
+  display: block;
+  margin-left: 35rpx;
+}
+
+.top-image {
+  width: 100%;
+  height: 250rpx;
+}
+
+.reset {
+  margin-top: -320rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.email {
+  margin-top: 70rpx;
+  font-weight: 600;
+}
+
+.inputView1 {
+  margin-top: 50rpx;
+}
+.inputText2{
+  margin-top:30rpx ;
+}
+
+
+
+.line {
+  width: 660rpx;
+  height: 4rpx;
+  background-color: pink;
+  margin-top: 1px;
+}
+
+.verification {
+  margin-top: 70rpx;
+  font-weight: 600;
+}
+
+.inputView2 {
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  flex: block;
+  
+}
+.send{
+  margin-left: -300rpx;
+  font-weight: 400;
+  text-align: center;
+  border-left: 0;
+  border-right:0;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  background-color: #E0315D;
+}
+
+.code {
+  margin-top: 70rpx;
+  font-weight: 600;
+}
+
+.inputView3 {
+  margin-top: 50rpx;
+}
+.confirm {
+  margin-top: 70rpx;
+  font-weight: 600;
+}
+
+.inputView4 {
+  margin-top: 50rpx;
+  width: 500rpx;
+} 
+
+.btn {
+  margin-top: -80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  /* color: white;
+  background: red; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #E0315D;
+}
+
+.buttom-image{
+  width: 100%;
+  height: 250rpx; 
+}
+.imageStyle {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 80rpx;
+  margin-top:50rpx; 
+}
+.pass {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.pass-con {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+

@@ -1,0 +1,114 @@
+.container {
+  display: block;
+  margin-left: 35rpx;
+}
+
+.top-image {
+  width: 100%;
+  height: 250rpx;
+}
+
+.login {
+  margin-top: -320rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.email {
+  margin-top: 90rpx;
+  font-weight: 600;
+
+}
+
+.inputView1 {
+  margin-top: 90rpx;
+}
+
+.line {
+  width: 650rpx;
+  height: 4rpx;
+  background-color: pink;
+  margin-top: 1px;
+}
+
+.password-tip {
+  margin-top: 90rpx;
+  font-weight: 600;
+}
+
+.inputView2 {
+  margin-top: 100rpx;
+}
+
+.imageStyle {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 80rpx;
+  margin-top: 100rpx;
+}
+
+.pass {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.btn {
+  margin-top: -100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  color: white;
+  background-color: #E0315D;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* .btn1::after{
+  border :0
+} */
+
+.forget {
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  margin-top: 70rpx;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+/* .buttom{
+  margin-bottom:auto;
+  display: block;
+  margin-bottom: -500rpx;
+} */
+.buttom {
+  padding: 0;
+  margin: 0;
+}
+
+.buttom-image {
+  width: 100%;
+  height: 250rpx;
+  padding: 0;
+  margin: 0;
+}
+
+.create_account {
+  color: red;
+}
+
+.forget_pasword {
+  font-weight: 600;
+}

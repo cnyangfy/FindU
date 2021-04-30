@@ -1,0 +1,50 @@
+<!--pages/show/show.wxml-->
+<view class="userInfo">
+    <view class="avatar">
+        <image class="userAvatar" src='/image/publisher.png'></image>
+    </view>
+    
+    <view class="name">
+    <view class="nameTitle">Name</view>
+        <view>
+            <view class="nameInput">{{uName}}</view> 
+        </view>
+    </view>
+          
+    <view class="genderFlex">
+        <view class="genderTitle">Gender</view>
+        <view class="genderVaule" >{{uGender}}</view>
+    </view>        
+                  
+    <view class="gradeFlex">
+        <view class="gradeTitle">Grade</view>
+        <view class="gradeVaule">{{uGrade}}</view>  
+    </view>      
+
+    <view class="departFlex">
+        <view class="departTitle">Department</view>
+        <view class="departVaule">{{uDepart}}</view> 
+    </view>       
+    
+    <view class="routineFlex">
+        <view class="routineTitle">Routine</view>
+        <view class="routineVaule">{{uRoutine}}</view> 
+    </view>         
+
+
+    <view class="contact">
+        <view class="contactTitle">Contact</view>
+        <view class="contactInput">{{uContact}}</view>
+    </view>
+
+    <view class="description">
+        <view class="desTitle">Description</view>
+        <view class="desText">{{uDescrip}}</view>
+    </view>
+
+    <view class="button" bindtap="toEdit">
+    <button class="submit" >Edit</button>
+    </view>
+
+  </view>
+

@@ -1,0 +1,19 @@
+/* pages/noti/noti.wxss */
+page {
+    height: 100%
+  }
+  
+  .notification{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200rpx;
+  }
+  .notification .picture{
+      width: 200rpx;
+      height: 200rpx;
+  }
+  .notification .hint{
+      font-size: 35rpx;
+  }

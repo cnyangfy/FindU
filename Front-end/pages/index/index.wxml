@@ -1,0 +1,40 @@
+<view class="tabTit box">
+  <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text>
+  </view>
+</view>
+
+<view class="tabLayer" hidden="{{tab[0]}}">
+  <text class="{{gender_id==0?'active':''}}" data-id="0" data-index="0" data-txt="male" bindtap="filter">male</text>
+  <text class="{{gender_id==1?'active':''}}" data-id="1" data-index="0" data-txt="female" bindtap="filter">female</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{routine_id==0?'active':''}}" data-id="0" data-index="1" data-txt="all" bindtap="filter">all</text>
+    <text class="{{routine_id==1?'active':''}}" data-id="1" data-index="1" data-txt="before 11 pm" bindtap="filter">before 11 pm</text>
+    <text class="{{routine_id==2?'active':''}}" data-id="2" data-index="1" data-txt="after 11 pm" bindtap="filter">after 11 pm</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[2]}}">
+    <text class="{{location_id==0?'active':''}}" data-id="0" data-index="2" data-txt="all" bindtap="filter">all</text>
+    <text class="{{location_id==1?'active':''}}" data-id="1" data-index="2" data-txt="dormitory" bindtap="filter">dormitory</text>
+    <text class="{{location_id==2?'active':''}}" data-id="2" data-index="2" data-txt="off campus" bindtap="filter">off campus</text>
+</view>
+
+<view class="container">
+  <view class='post' wx:for="{{details}}" bindtap="toDetail" detail-id>
+    <view class='post_img'>
+      <image src='/image/publisher.png'></image>
+    </view>
+    <view class='post_info'>
+      <text class='title'>{{item.title}}</text>
+      <view class='content'>{{item.gender}} | {{item.routine}} | {{item.location}}</view>
+      <view class='member'>
+        <text class='name'>{{item.create_by}}</text><text class='member1'>{{item.user_number}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="btn" bindtap="gotop">
+    <text class="btn-gotop" style="">TOP</text>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+/* pages/center/center.wxss */
+page {
+    background-color: #e5e2e2;
+} 
+    
+.top{
+    height: 240rpx;
+    width: 100%;
+    background: #BF0060;
+    padding-top: 60rpx;
+    display: block;
+}
+.userAvatar{
+    /* margin-top: 20rpx; */
+    float: left;
+}
+
+.picture{
+    width: 180rpx;
+    height:180rpx;
+    margin: 30rpx;
+}
+
+.userName{
+    padding-top: 110rpx;
+    padding-left: 20rpx;
+    color: #FFFFFF;
+    font-size: 32rpx;
+    float: left;
+}
+
+.contain{
+    padding-top: 0;
+    margin-top: 20rpx;
+    background:#FFFFFF;
+    font-size:30rpx;
+}
+
+.row{
+    padding: 0rpx 36rpx;
+    border-bottom: 2rpx #E8E8E8 solid;
+    height: 110rpx;
+    line-height: 110rpx;
+} 
+
+.name {
+    float:left;
+}
+
+.right {
+    float: right;
+    color: #C8C8C8;
+    line-height:110rpx;
+}
+
+.logout{
+    /* position:fixed; bottom:0; */
+    margin-top: 120rpx;
+    border-radius: 0;
+    height: 80rpx!important;
+    width: 50% !important;
+    color: #000000!important;
+    font-size: 30rpx !important;  
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 12px 5px -10px rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 12px 5px -10px rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2);
+}
+  

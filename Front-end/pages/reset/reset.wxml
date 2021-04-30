@@ -1,0 +1,82 @@
+<view class="top">
+  <image class="top-image" src="/image/top.png">
+  </image>
+</view>
+
+<view class="container">
+  <view class="reset">
+    Reset password
+  </view>
+
+  <view class="email">
+    Email address
+  </view>
+
+  <view class="inputView1">
+    <input class="inputText1"  bindinput="handleInput"  data-type="email" id ="email" style='font-size:34rpx' placeholder="Input your email" />
+  </view>
+  <view class="line"></view>
+
+
+  <view class="verification">
+    verification
+  </view>
+
+  <view class="inputView2">
+    <input class="inputText2" bindinput="handleInput"  data-type="code" id ="code" style='font-size:34rpx' placeholder="Input your code" />
+      <button class="send" bindtap="sendCode" disabled="{{smsFlag}}"
+      style='width: 245rpx;color:{{sendColor}};font-size:28rpx'>{{sendTime}}
+    </button>
+  </view>
+  <view class="line"></view>
+
+
+  <view class="code">
+    New Password
+  </view>
+
+  <view class="pass">
+    <view class="inputView3">
+      <input  class="inputText4" password='{{passwordType}}' maxlength="20" bindinput="handleInput"  data-type="password" id ="password"placeholder="Input your password" style='font-size:34rpx'></input>
+    </view>
+
+    <image src='{{defaultType? "/image/yanjing-kai.png": "/image/yanjing-guan.png"}}' class='imageStyle'
+      bindtap='eyeStatus'></image>
+
+  </view>
+
+
+  <view class="line"></view>
+
+
+  <view class="confirm">
+    Confirm New Password
+  </view>
+
+  <view class="pass-con">
+    <view class="inputView4">
+
+      <input class="inputText4"  password='{{passwordType1}}' maxlength="30"   
+      bindinput="handleInput"  data-type="conpassword" id ="conpassword" placeholder="Confirm your password " style='font-size:34rpx'></input>
+    </view>
+
+    <image src='{{defaultType1? "/image/yanjing-kai.png": "/image/yanjing-guan.png"}}' class='imageStyle'
+      bindtap='eyeStatus1'></image>
+
+  </view>
+
+
+  <view class="line"></view>
+
+</view>
+
+<view class="btn">
+  <button class="btn1" style="width: 600rpx"  bindtap="reset">
+    Reset Password
+  </button>
+</view>
+
+<view class="bottom">
+  <image class="buttom-image" src="/image/bottom.png">
+  </image>
+</view>

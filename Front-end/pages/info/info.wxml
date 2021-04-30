@@ -1,0 +1,74 @@
+<!--pages/info/info.wxml-->
+<view class="userInfo">
+    <view class="avatar">
+        <image class="userAvatar" src='/image/publisher.png'></image>
+    </view>
+    
+    <form bindsubmit="formSubmit">
+      <view class="name">
+        <view class="nameTitle">Name</view>
+        <view>
+          <input class="nameInput" name="userName" type="text" value="{{userName}}" focus="{{true}}" bindblur="nameBlur"/>
+        </view>
+      </view>
+
+      <view class="gender">           
+        <picker class="genderPicker" name="userGender" mode="selector" bindchange="sexPickerChange" value="{{arrayOfSex[indexOfSex]}}" index="{{indexOfSex}}" range="{{arrayOfSex}}">         
+          <view class="genderFlex">
+            <view class="genderTitle">Gender</view>
+            <text class="genderVaule" >{{arrayOfSex[indexOfSex]}}</text>
+          </view>        
+        </picker>       
+      </view> 
+
+      <view class="grade">     
+        <picker class="gradePicker" name="userGrade" mode="selector" bindchange="gradePickerChange" value="{{arrayOfGrade[indexOfGrade]}}" index="{{indexOfGrade}}" range="{{arrayOfGrade}}">         
+          <view class="gradeFlex">
+            <view class="gradeTitle">Grage</view>
+            <text class="gradeVaule">{{arrayOfGrade[indexOfGrade]}}</text>  
+          </view>   
+        </picker>      
+      </view> 
+
+
+      <view class="department">      
+        <picker class="departPicker" name="userDepartment" mode="selector" bindchange="departPickerChange" value="{{arrayOfDepart[indexOfDepart]}}" index="{{indexOfDepart}}" range="{{arrayOfDepart}}">         
+          <view class="departFlex">
+            <view class="departTitle">Department</view>
+            <text class="departVaule">{{arrayOfDepart[indexOfDepart]}}</text> 
+          </view>       
+        </picker>      
+      </view> 
+
+      <view class="routine">       
+        <picker class="routinePicker" name="userRoutine" mode="selector" bindchange="routinePickerChange" value="{{arrayOfRoutine[indexOfRoutine]}}" index="{{indexOfRoutine}}" range="{{arrayOfRoutine}}">         
+          <view class="routineFlex">
+            <view class="routineTitle">Routine</view>
+            <text class="routineVaule">{{arrayOfRoutine[indexOfRoutine]}}</text> 
+          </view>         
+        </picker>       
+      </view> 
+
+      <view class="contact">
+        <view class="contactTitle">Contact</view>
+
+        <view>
+          <input class="contactInput" name="userContact" type="text" value="{{userContact}}"  bindblur="contactBlur"/>
+        </view>
+      </view>
+
+      <view class="description">
+        <view class="desTitle">Description</view>
+
+        <view class="desText">
+          <textarea class="desInput"  name = "userDescrip" maxlength="200" value="{{userDescrip}}"  bindblur="descripBlur"></textarea>
+        </view>
+      </view>
+
+      <view class="button">
+        <button class="submit" formType="submit">Submit</button>
+      </view>
+
+    </form>
+  </view>
+

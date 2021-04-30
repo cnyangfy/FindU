@@ -1,0 +1,12 @@
+<!--pages/noti/noti.wxml-->
+<view class="notification">
+    <view class="img">
+        <image class="picture" src='/image/cry.png'></image>
+    </view>
+
+    <view class="text">
+        <text class="hint">This Feature is Temporarily Unavailable</text>
+    </view>
+
+</view>
+

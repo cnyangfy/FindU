@@ -1,0 +1,58 @@
+<!--pages/post/post.wxml-->  
+  <view class="mypost" wx:if="{{hasPost}}">
+    <view class="top">
+      <view class="title">{{postName}}</view>
+    </view>
+
+    <view class="postInfo">
+      <view class="basicInfo">
+        <view class="subTitle">Basic Information</view>
+          <view class="table">
+            <view class="row" >
+                <text class="name" decode="{{true}}">&nbsp;Gender</text>
+                <text class="info" >{{sexInfo}}</text>
+            </view>
+
+            <view class="row" >
+                <text class="name" decode="{{true}}">&nbsp;Routine</text>
+                <text class="info">{{routineInfo}}</text>
+            </view>
+
+            <view class="row" >
+                <text class="name" decode="{{true}}">&nbsp;Location</text>
+                <text class="info">{{locationInfo}}</text>
+            </view>
+          </view>
+      </view>
+
+      <view class="partner">
+        <view class="subTitle">Roommate</view>
+          <view class="line">
+            <view class="secondRow" >
+              <view class="text">Current Roommate :</view>
+              <text class="data" decode="{{true}}"> &nbsp;{{nowMember}}&nbsp;/&nbsp;{{maxMember}}</text>
+            </view>
+          </view>
+      </view>
+
+      <view class="intro">
+        <view class="subTitle">Introdaction</view>
+        <view>
+          <view class="introText">{{intro}}</view> 
+        </view>
+        <view class="images">
+            
+        </view>
+      </view>
+
+      <view class="button">
+        <button class="delete" bindtap="deletePost">Delete</button>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="none" wx:else>
+    <view  class="message">You have not posted a post</view>
+  </view>
+

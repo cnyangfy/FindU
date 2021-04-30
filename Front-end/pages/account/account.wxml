@@ -1,0 +1,87 @@
+<view class="top">
+  <image class="top-image" src="/image/top.png">
+  </image>
+</view>
+
+<view class="container">
+  <view class="create">
+    Create Account
+  </view>
+
+  <view class="name">
+    Name
+  </view>
+
+  <view class="inputView1">
+    <input class="inputText1" bindinput="handleInput" data-type="name" id ="name" placeholder="Input your name"style='font-size:34rpx' />
+  </view>
+  <view class="line"></view>
+<view class="email">
+  Email address
+</view>
+
+<view class="inputView1">
+    <input class="inputText1" bindinput="handleInput"  data-type="email" id ="email" placeholder="Input your mail"style='font-size:34rpx' />
+  </view>
+  <view class="line"></view>
+
+  <view class="tip1">
+    XJTLU student e-mail only
+  </view>
+
+  <view class="password">
+  Password
+</view>
+
+
+<view class="pass">
+  <view class="inputView2">
+    <input password='{{passwordType}}' bindinput="handleInput" data-type="password" id ="password" maxlength="20" placeholder="Input your password" style='font-size:34rpx'></input>
+  </view>
+
+  <image src='{{defaultType?"/image/yanjing-kai.png": "/image/yanjing-guan.png"}}' class='imageStyle'
+      bindtap='eyeStatus'></image>
+
+</view>
+<view class="line"></view>
+
+<view class="tip1">
+  6~11 digit a~z, 0~9 only
+</view>
+
+<view class="vrcode">
+  Verification Code
+</view>
+<view class="inputView">
+    <input class="inputText" style='font-size:34rpx'  id ="code" data-type="code"  bindinput="handleInput"placeholder="Input Verification" />
+    <!-- <button class="send" type="primary" style="width: 245rpx" > -->
+
+    <button class="send" bindtap="sendCode" disabled="{{smsFlag}}"
+      style='width: 230rpx; color:{{sendColor}};font-size:28rpx'>{{sendTime}}
+    </button>
+  </view>
+  <view class="line"></view>
+
+</view>
+
+
+
+
+
+
+
+
+
+<view class="btn">
+  <button class="btn1" style="width: 600rpx"  bindtap="zhuce" >
+    Create Account
+  </button>
+</view>
+
+
+
+
+<view class="bottom">
+  <image class="buttom-image" src="/image/bottom.png">
+  </image>
+</view>
