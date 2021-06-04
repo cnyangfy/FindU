@@ -1,6 +1,77 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="mypost" wx:for="{{info}}">
+    <view class="top">
+      <view class="title">{{title}}</view>
+    </view>
+
+    <view class="postInfo">
+      <view class="basicInfo">
+        <view class="subTitle">Basic Information</view>
+          <view class="table">
+            <view class="row" >
+                <text class="name"decode="{{true}}">&nbsp;Gender</text>
+                <text class="info" >{{gender}}</text>
+            </view>
+
+            <view class="row">
+                <text class="name"decode="{{true}}">&nbsp;Routine</text>
+                <text class="info">{{routine}}</text>
+            </view>
+
+            <view class="row" >
+                <text class="name" decode="{{true}}">&nbsp;Location</text>
+                <text class="info">{{location}}</text>
+            </view>
+          </view>
+      </view>
+
+      <view class="partner">
+        <view class="subTitle">Roommate</view>
+          <view class="line">
+            <view class="secondRow" >
+              <view class="text">Current Roommate :</view>
+              <text class="data" decode="{{true}}"> &nbsp;{{member}}</text>
+            </view>
+          </view>
+      </view>
+    </view>
+
+    <view class="intro">
+      <view class="subTitle">Introdaction</view>
+        <view class='introlist'>
+          <view class='intro_info'>{{intro}}</view>
+        </view>
+       
+    </view>
+
+    
+    <button class="apply" bindtap="showPop">Apply</button>
+    
+    
+</view>
+
+<view class="modal-pop" bindtap="hidePop" catchtouchmove="true" wx:if="{{showPop}}"></view>
+<view class="modal-pop-dialog" wx:if="{{showPop}}">
+    <view class="modal-content">
+      <view class="applytitle">Apply to join</view>
+    </view>
+    <view class="modal-text">
+      <textarea placeholder-class="place-holder" placeholder='Type Something here!' maxlength="50" bindblur="bindTextAreaBlur"></textarea>
+    </view>
+
+    
+    <view class="pop-footer">
+        <view class="pop-cancel" bindtap="popCancel" data-status="cancel">Cancel</view>
+        <view class="pop-confirm" bindtap="popConfirm" data-status="confirm">Confirm</view>
+    </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="true" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="message">{{message}}</view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">Cancel</view>
+        <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">Confirm</view>
+    </view>
 </view>

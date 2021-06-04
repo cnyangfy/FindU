@@ -1,5 +1,22 @@
 <!--pages/center/center.wxml-->
-<view> 
+<view class = "false" wx:if="{{log==false}}">
+
+    <view class="sorry">
+        <image class="sorryPic" src="/image/cry.png"></image>
+    </view>
+
+    <view class="create1">
+        You need to login
+    </view>
+
+    <view class="create">
+        <navigator class="create_account" url="/pages/login/login">Login</navigator>
+    </view>
+
+</view>
+
+
+<view class = "true" wx:else > 
         <view class="top">
             <view class="userAvatar">
                 <image class="picture" src='/image/publisher.png'></image>
@@ -21,8 +38,8 @@
                 <label class="right">></label>
             </view>
 
-            <view class="row" bindtap="showPost">
-                <label class="name">Manage My Post</label>
+            <view class="row" bindtap="showMoreFunction">
+                <label class="name">My Post</label>
                 <label class="right">></label>
             </view>
         </view>

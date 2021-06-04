@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userName:'userName'
+    log : app.globalData.islog,
+    userName : ''
   },
 
   showInfo(){
@@ -20,9 +21,9 @@ Page({
     })
     
   },
-  showPost(){
+  showMoreFunction(){
     wx.navigateTo({
-      url:"/pages/post/post"
+      url:"/pages/moreFunc/moreFunc"
     })
 
   },
@@ -91,7 +92,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      log : app.globalData.islog
+    });
   },
 
   /**

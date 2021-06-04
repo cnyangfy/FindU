@@ -1,3 +1,4 @@
+// pages/otherInfo/otherInfo.js
 // pages/show/show.js
 var app = getApp()
 
@@ -13,17 +14,16 @@ Page({
     uDepart: '',
     uRoutine: '',
     uContact: '',
-    uDescrip: ''
-
-
+    uDescrip: '',
+    uEmail: ''
   },
-  toEdit() {
-    wx.redirectTo({
-      url: "/pages/info/info"
+
+  onLoad: function (options) {
+    this.setData({
+      uEmail : options.email 
     })
-  },
+    console.log('email:',this.data.uEmail)
 
-  onLoad: function (e) {
     let {
       uName,
       uGender,
@@ -34,10 +34,13 @@ Page({
       uDescrip,
     } = this.data;
     wx.request({
-      url: 'https://findu.club/showInfo',
+      url: 'https://findu.club/otherInfo',
       method: 'GET',
       header: {
         'token' :  app.globalData.token
+      },
+      data:{
+        email : this.data.uEmail
       },
       success: (res) => {
         console.log('Request succeeded,', res);

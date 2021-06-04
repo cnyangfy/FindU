@@ -1,5 +1,5 @@
 /* pages/noti/noti.wxss */
-page {
+/* page {
     height: 100%
   }
   
@@ -16,4 +16,30 @@ page {
   }
   .notification .hint{
       font-size: 35rpx;
+  } */
+
+  .notiList{
+    /* padding: 0; */
+    width: 95%;
+    border: 3rpx solid #808080;
+
+    margin-top: 40rpx;
+    margin-left:10px;
+    margin-right:10px;
+    padding-top:10rpx; 
+  }
+
+  .notiTitle{
+    font-size: 45rpx;
+    font-weight: 550;
+  }
+
+  .notiBody{
+    font-size: 36rpx;
+    color: rgb(75, 75, 75);
+  }
+
+  .notiTime{
+    font-size: 36rpx;
+    color: rgb(75, 75, 75);
   }

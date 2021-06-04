@@ -1,0 +1,14 @@
+/* pages/rejected/rejected.wxss */
+.rejected{
+    display: flex;
+    flex-direction: column;
+}
+.inform{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    line-height: 80rpx;
+    height: 400rpx;
+    color: rgb(65, 65, 65);
+}

@@ -22,7 +22,8 @@
 </view>
 
 <view class="container">
-  <view class='post' wx:for="{{details}}" bindtap="toDetail" detail-id>
+  <view class='post' wx:for="{{details}}" data-gender="{{item.gender}}" data-routine="{{item.routine}}"
+  data-location="{{item.location}}" data-title="{{item.title}}" data-member="{{item.user_number}}" data-postid="{{item.id}}" bindtap="toDetail">
     <view class='post_img'>
       <image src='/image/publisher.png'></image>
     </view>

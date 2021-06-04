@@ -12,7 +12,7 @@ Page({
     user_number: "",
     body: "",
     post_time: "",
-    
+    log:app.globalData.islog,
     array1: ['male', 'female'],
     objectArray1: [
       {
@@ -118,8 +118,10 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onShow: function (options) {
+    this.setData({
+      log:app.globalData.islog
+    });
   },
   submit(event) {
     let { title,
@@ -213,12 +215,19 @@ Page({
               icon: 'none',
             })
           }
-          else if (res.data.message == "0") {
+          else if (res.data.message == 0) {
             wx.showToast({
               title: "You've already applied a topic",
               icon: 'none',
             })
           }
+          else if (res.data.message == 3) {
+            wx.showToast({
+              title: "Personal credit is low, unable to post.",
+              icon: 'none',
+            })
+          }
+          
         }
       })
     }

@@ -19,7 +19,7 @@
 .tabTit .active{
   border-radius: 30px;
   color:white;
-  background: #ff00cc;
+  background: #e0315d;
 }
 
 
@@ -44,7 +44,7 @@
 .tabTit .active{
   border-radius: 30px;
   color:white;
-  background: #ff00cc;
+  background: #e0315d;
 }
 
 
@@ -68,13 +68,13 @@
   line-height:60rpx;
   float:left;
   border: solid 1px #eee;
-  background: #ff00cc;
+  background: #e0315d;
   margin:20rpx 0 0 26rpx;
   font-size:15px;
 }
 .tabLayer .active{
   color: white;
-  background: #ff00cc;
+  background: #e0315d;
 }
 
 .flex1 {
@@ -99,6 +99,7 @@
   padding: 0;
   margin-top: 91rpx;
 }
+
 .post{
   margin-top: 10px;
   display: flex;
@@ -111,6 +112,8 @@
   padding-top:10rpx; 
   border-radius: 20px;
   background: #f4f2f7;
+  box-shadow: 0 12px 5px -10px rgba(0,0,0,0.3), 0 0 4px 0 rgba(0,0,0,0.3);
+-webkit-box-shadow: 0 12px 5px -10px rgba(0,0,0,0.3), 0 0 4px 0 rgba(0,0,0,0.3);
 }
 .post_img{
   width: 30%;
@@ -143,7 +146,7 @@
 }
 .member .member1{
   position: absolute;
-  color: #ff00cc;
+  color: #e0315d;
   font-size: 35rpx;
   font-weight: 600;
   right: 60rpx;
@@ -157,7 +160,9 @@
   height: 48px;
   position:fixed; 
   bottom:20px; 
-  border-radius: 50%
+  border-radius: 50%;
+  box-shadow: 0 12px 5px -10px rgba(0,0,0,0.3), 0 0 4px 0 rgba(0,0,0,0.3);
+-webkit-box-shadow: 0 12px 5px -10px rgba(0,0,0,0.3), 0 0 4px 0 rgba(0,0,0,0.3);
   }
 
 .btn-gotop{ 
@@ -168,7 +173,3 @@
   margin-left: 0.4rem;
   margin-right: 0.4rem
   } 
-
-.container{
-  display: block;
-}

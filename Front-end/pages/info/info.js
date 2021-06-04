@@ -9,10 +9,10 @@ Page({
    */
   data: {
     userName: '',
-    userSex: '',
-    userGrade: '',
-    userDepart: '',
-    userRoutine: '',
+    userSex: 'Male',
+    userGrade: 'Year 1',
+    userDepart: 'IBSS',
+    userRoutine: 'Before 23:00',
     userContact: '',
     userDescrip: '',
 

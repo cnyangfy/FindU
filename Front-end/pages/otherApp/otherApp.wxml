@@ -1,0 +1,31 @@
+<!--pages/otherApp/otherApp.wxml-->
+<view class="otherApplication">
+    <view class="applicant" >
+        <view class="appliAvater">
+            <image class="picture" src="{{friAvater}}" />
+        </view>
+
+        <view class="text">
+            <view class="appliName">
+                <text class="name" decode="{{true}}">&nbsp;&nbsp;&nbsp;{{friName}}</text>
+            </view>
+
+            <view class="moreDetail">
+                <text class="postTitle" decode="{{true}}">&nbsp;&nbsp;&nbsp;applied to join {{postName}}</text>
+            </view>
+
+        </view>
+
+    </view>
+
+    <view class="button">
+        <view class="agree">
+            <button class="yes" bindtap="selectYes">Agree</button>
+        </view>
+
+        <view class="disagree">
+            <button class="no" bindtap="selectNo">Disagree</button>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,36 @@
+/* pages/otherApp/otherApp.wxss */
+.otherApplication{
+    display: flex;
+    flex-direction: column;
+}
+.applicant{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto ;
+    width: 90%;
+    margin-top: 80rpx;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(65, 65, 65);
+}
+.appliName{
+    font-size: 34rpx;
+    font-weight: 550;
+    color: #BF0060;
+}
+.picture{
+    width: 130rpx;
+    height: 130rpx;
+}
+.button{
+    margin-top: 100rpx;
+}
+button{
+    margin-top: 200rpx;
+    /* background: #cc3366; */
+    background: #d81957;
+    color: white;
+}

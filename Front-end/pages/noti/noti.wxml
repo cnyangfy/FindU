@@ -1,5 +1,5 @@
 <!--pages/noti/noti.wxml-->
-<view class="notification">
+<!-- <view class="notification">
     <view class="img">
         <image class="picture" src='/image/cry.png'></image>
     </view>
@@ -8,5 +8,25 @@
         <text class="hint">This Feature is Temporarily Unavailable</text>
     </view>
 
-</view>
+</view> -->
 
+<view class="notification">
+    <view class="notiList" wx:for="{{notiList}}"  
+    data-title="{{item.title}}" data-body="{{item.body}}" data-time="{{item.time}}" 
+    data-message="{{item.message}}" data-applicant="{{item.applicant}}"
+    bindtap="toMoreInfo">
+
+        <view class="notiTitle">
+            <text decode="{{true}}"> &nbsp;{{item.title}} </text>
+        </view>
+        
+        <view class="notiBody"> 
+            <text decode="{{true}}"> &nbsp;{{item.body }} </text>
+        </view>  
+
+        <view class="notiTime">
+            <text decode="{{true}}"> &nbsp;{{item.time}} </text>
+        </view>
+
+    </view>
+</view>

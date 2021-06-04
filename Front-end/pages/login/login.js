@@ -69,7 +69,10 @@ Page({
           }
           else if (res.data.message == 200) {  //
             app.globalData.token = res.data.token
+            app.globalData.islog = true
             console.log(app.globalData.token)
+            console.log(app.globalData.islog)
+
             wx.showToast({
               title: 'Login successfully',
               icon: 'none',

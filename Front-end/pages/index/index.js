@@ -1,4 +1,4 @@
-const app = getApp()
+//const app = getApp()
 Page({
   data: {
     tabTxt: ['Gender', 'Routine', 'Location'],
@@ -11,61 +11,10 @@ Page({
     location_txt: '',
     pageNo:1,
     details:[{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
-    },{
-      gender:'male',
-      routine:'before 11 pm',
-      location:'off campus',
-      create_by:'id',
-      user_number:'3',
-      title:'This is an example'
+      title:'Choose Tag to find roomate!',
+      gender:'Welcome',
+      routine:'To',
+      location:'FindU'
     }],
   },
  
@@ -133,11 +82,11 @@ Page({
         "location": arr[2],
       },
       header: {
-        'token': app.globalData.token
+        'token': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMTExQHFxLmNvbSJ9.u3VxG7Q-89xGZcRhJWRUXHDDmZhIfeGbFwp2zqgYCb",
       },
       method:'GET',
       success(res){
-        console.log(res.data);
+        console.log(res.data)
         let result = res.data;
         self.setData({
           details:result
@@ -168,6 +117,28 @@ Page({
         content: 'Fail!'
       })
     }
+  },
+
+  toDetail: function(e){
+   console.log(e)
+   let info_list = e.currentTarget.dataset
+   console.log(info_list)
+   
+   var gender = e.currentTarget.dataset.gender
+   var location = e.currentTarget.dataset.location
+   var member = e.currentTarget.dataset.member
+   var postid = e.currentTarget.dataset.postid
+   var routine = e.currentTarget.dataset.routine
+   var title = e.currentTarget.dataset.title
+
+   wx.navigateTo({
+     url: '/pages/logs/logs?gender='+gender+
+     '&location='+location+
+     '&member='+member+
+     '&postid='+postid+
+     '&routine='+routine+
+     '&title='+title,
+   })
   }
 
 },)

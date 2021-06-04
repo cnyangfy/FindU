@@ -45,6 +45,73 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/info/info",
+          "pathName": "pages/info/info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/noti/noti",
+          "pathName": "pages/noti/noti",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/match/match",
+          "pathName": "pages/match/match",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/approved/approved",
+          "pathName": "pages/approved/approved",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/rejected/rejected",
+          "pathName": "pages/rejected/rejected",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/otherApp/otherApp",
+          "pathName": "pages/otherApp/otherApp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/otherInfo/otherInfo",
+          "pathName": "pages/otherInfo/otherInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/center/center",
+          "pathName": "pages/center/center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/post/post",
+          "pathName": "pages/post/post",
+          "query": "",
           "scene": null
         }
       ]

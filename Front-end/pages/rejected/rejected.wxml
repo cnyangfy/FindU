@@ -1,0 +1,7 @@
+<!--pages/rejected/rejected.wxml-->
+<view class="rejected">
+    <view class="inform">
+        <text>You are rejected to join</text>
+        <text> {{postName}}</text>
+    </view>
+</view>

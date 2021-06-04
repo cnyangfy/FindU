@@ -1,0 +1,28 @@
+/* pages/moreFunc/moreFunc.wxss */
+page {
+    background-color: #e5e2e2;
+} 
+
+.contain{
+    padding-top: 0;
+    margin-top: 20rpx;
+    background:#FFFFFF;
+    font-size:30rpx;
+}
+
+.row{
+    padding: 0rpx 36rpx;
+    border-bottom: 2rpx #E8E8E8 solid;
+    height: 110rpx;
+    line-height: 110rpx;
+} 
+
+.name {
+    float:left;
+}
+
+.right {
+    float: right;
+    color: #C8C8C8;
+    line-height:110rpx;
+}

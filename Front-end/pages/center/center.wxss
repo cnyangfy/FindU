@@ -1,6 +1,7 @@
 /* pages/center/center.wxss */
 page {
-    background-color: #e5e2e2;
+    height: 100%;
+    background-color: white;
 } 
     
 .top{
@@ -32,7 +33,7 @@ page {
 .contain{
     padding-top: 0;
     margin-top: 20rpx;
-    background:#FFFFFF;
+    background-color:#f4f2f7;
     font-size:30rpx;
 }
 
@@ -59,11 +60,41 @@ page {
     border-radius: 0;
     height: 80rpx!important;
     width: 50% !important;
-    color: #000000!important;
-    font-size: 30rpx !important;  
+    color: white!important;
+    font-size: 30rpx !important; 
+    background: #e0315d!important; 
     border: none;
     border-radius: 3px;
     box-shadow: 0 12px 5px -10px rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 12px 5px -10px rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2);
+}
+
+.false{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200rpx;
+}
+
+
+.sorryPic{
+    width: 240rpx;
+    height: 240rpx;
+}
+
+.create1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30rpx;
+  }
+.create {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rpx;
+}
+
+.create_account {
+    color: red;
 }
   

@@ -1,4 +1,5 @@
-// pages/post/post.js
+// pages/participate/participate.js
+
 var app = getApp()
 
 Page({
@@ -8,69 +9,18 @@ Page({
    */
   data: {
     postName:'',
-    sexNum : 0,
+
     sexInfo : 'userGender',
     routineInfo : 'userRoutine',
     locationInfo : 'userLocation',
     intro:'Sorry, the user did not add introduction',
-
-    credit : 0,
-
+    
     maxMember:0,
     nowMember:0,
     hasPost: true
 
   },
-  deletePost: function (e){
-    var that = this
-
-    wx.showModal({
-      title: 'Delete',
-      content: 'Your credit is: ' + that.data.credit +'/ 3 \r\n Be sure to delete posts?',
-      cancelText : 'No',
-      confirmText : 'Yes',
-      success (res) {
-        if (res.confirm) {
-          console.log('user click "Yes"')
-          wx.request({
-            url:'https://findu.club/me/myPost/delete',
-            method: 'GET',
-            header:{
-              'token' :  app.globalData.token
-            },
-            data:{},
-            success: (res) => {
-              console.log('Deleted successfully：', res)
-                wx.showToast({
-                  title: 'Deleted Successfully',
-                  icon: 'success',
-                  duration: 2000
-                })
-                wx.switchTab({
-                  url: '/pages/center/center'
-                })
-                
-            },
-            fail: (err) => {
-              console.log('Deleted failed', err)
-              wx.showToast({
-                title: 'Deleted Failed',
-                icon: 'error',
-                duration: 2000
-              })
-            }
-          }),
-          that.setData({
-            hasPost : false
-          })
-        } else if (res.cancel) {
-          console.log('user click "No"')
-        }
-      }
-    })
-  },
-    
-    
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -88,13 +38,13 @@ Page({
         hasPost : false
       })
     }
+
     this.getPostInfo()
   },
-
   getPostInfo(){
     var that=this
     wx.request({
-      url: 'https://findu.club/me/myPost',
+      url: 'https://findu.club/me/joinPost',
       method: 'GET',
       header:{
        'token' :  app.globalData.token
@@ -116,7 +66,6 @@ Page({
             intro : res.data.myPost.body,
             maxMember : res.data.myPost.user_number,
             nowMember : res.data.myPost.now_number,
-            credit : res.data.credit,
   　　　　 })
         }
       },

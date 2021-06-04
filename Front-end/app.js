@@ -4,6 +4,7 @@ App({
 
   },
   globalData: {
-    token:""
+    token:"",
+    islog: false
   }
 })

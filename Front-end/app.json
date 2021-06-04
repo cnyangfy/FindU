@@ -1,6 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/otherInfo/otherInfo",
+    "pages/otherApp/otherApp",
+    "pages/rejected/rejected",
+    "pages/approved/approved",
+    "pages/match/match",
+    "pages/noti/noti",
     "pages/center/center",
     "pages/find/find",
     "pages/logs/logs",
@@ -9,8 +15,9 @@
     "pages/reset/reset",
     "pages/show/show",
     "pages/info/info",
-    "pages/noti/noti",
-    "pages/post/post"
+    "pages/post/post",
+    "pages/moreFunc/moreFunc",
+    "pages/participate/participate"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,19 +31,16 @@
         "pagePath": "pages/index/index",
         "iconPath": "image/guangchang2.png",
         "selectedIconPath": "image/guangchang1.png"
-        
       },
       {
         "pagePath": "pages/find/find",
         "iconPath": "image/find2.png",
         "selectedIconPath": "image/find1.png"
-       
       },
       {
         "pagePath": "pages/center/center",
         "iconPath": "image/center2.png",
         "selectedIconPath": "image/center1.png"
-        
       }
     ]
   },

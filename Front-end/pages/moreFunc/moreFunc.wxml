@@ -1,0 +1,14 @@
+<!--pages/moreFunc/moreFunc.wxml-->
+<view class="contain">
+
+    <view class="row"  bindtap="showMyPost">
+        <label class="name">Published Post</label>
+        <label class="right">></label>
+    </view>
+
+    <view class="row" bindtap="showPartcipatedPost">
+        <label class="name">Participated Post</label>
+        <label class="right">></label>
+    </view>
+
+</view>

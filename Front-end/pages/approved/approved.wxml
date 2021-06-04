@@ -1,0 +1,25 @@
+<!--pages/approved/approved.wxml-->
+<view class="approved">
+    <view class="inform">
+        <text>You are approved to join</text>
+        <text> {{postName}}</text>
+    </view>
+
+    <view class= "show">
+        <view  class="showTitle" >
+            <text decode="{{true}}">Your Roommates: </text>
+        </view>
+
+        <view class="roommate" wx:for="{{roommateList}}"
+        data-avater="{{item.friAvater}}" data-name="{{item.friName}}" data-email="{{item.friEmail}}"
+        >
+            <view class="avater">
+                <image class="picture" src="{{item.friAvater}}"/>
+            </view>
+
+            <view class="name">
+                <text class="text" decode="{{true}}">&nbsp;&nbsp;{{item.friName}}</text>
+            </view>
+        </view>
+    </view>
+</view>

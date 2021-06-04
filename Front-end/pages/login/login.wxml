@@ -50,12 +50,12 @@
 
 <view class="forget">
   <navigator class="forget_pasword" url="/pages/reset/reset">
-    Foeget your pasword?
+    Forget your pasword?
   </navigator>
 </view>
 
 <view class="account">
-  Dont' have a account?
+  Dont' have an account?
 </view>
 <view class="create">
   <navigator class="create_account" url="/pages/account/account">

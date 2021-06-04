@@ -120,5 +120,36 @@
   margin-top: 5rpx;
   margin-left: 150rpx;
 }
+/* pages/noti/noti.wxss */
+page {
+  height: 100%
+}
+
+.false{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200rpx;
+}
 
 
+.sorryPic{
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.create1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.create {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
+.create_account {
+  color: red;
+}
